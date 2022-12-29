@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "47c9c309-48c7-4262-aa98-e678ec8fdfe0",
+		"name": "Udemy_Microservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ticketing_client",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"test@test.com\",\r\n    \"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ticketing.road/api/users/signin",
+					"protocol": "https",
+					"host": [
+						"ticketing",
+						"road"
+					],
+					"path": [
+						"api",
+						"users",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "currentuser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://ticketing.road/api/users/currentuser",
+					"protocol": "https",
+					"host": [
+						"ticketing",
+						"road"
+					],
+					"path": [
+						"api",
+						"users",
+						"currentuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://ticketing.road/api/users/signout",
+					"protocol": "https",
+					"host": [
+						"ticketing",
+						"road"
+					],
+					"path": [
+						"api",
+						"users",
+						"signout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test@test.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ticketing.road/api/users/signup",
+					"protocol": "https",
+					"host": [
+						"ticketing",
+						"road"
+					],
+					"path": [
+						"api",
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tickets",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"concert\",\r\n    \"price\":10\r\n}"
+				},
+				"url": {
+					"raw": "https://ticketing.road/api/tickets",
+					"protocol": "https",
+					"host": [
+						"ticketing",
+						"road"
+					],
+					"path": [
+						"api",
+						"tickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TicketById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ticketing.road/api/tickets/634f9ae316c61b001966c364",
+					"protocol": "https",
+					"host": [
+						"ticketing",
+						"road"
+					],
+					"path": [
+						"api",
+						"tickets",
+						"634f9ae316c61b001966c364"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TicketByIdUpdate",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"New Concert\",\r\n    \"price\":20\r\n}"
+				},
+				"url": {
+					"raw": "https://ticketing.road/api/tickets/634f9ae316c61b001966c364",
+					"protocol": "https",
+					"host": [
+						"ticketing",
+						"road"
+					],
+					"path": [
+						"api",
+						"tickets",
+						"634f9ae316c61b001966c364"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TicketAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ticketing.road/api/tickets/",
+					"protocol": "https",
+					"host": [
+						"ticketing",
+						"road"
+					],
+					"path": [
+						"api",
+						"tickets",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
