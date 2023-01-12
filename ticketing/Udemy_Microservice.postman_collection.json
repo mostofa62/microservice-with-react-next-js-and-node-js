@@ -147,6 +147,36 @@
 				],
 				"body": {
 					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"pain concert\",\r\n    \"price\":100.90\r\n}"
+				},
+				"url": {
+					"raw": "https://ticketing.road/api/tickets",
+					"protocol": "https",
+					"host": [
+						"ticketing",
+						"road"
+					],
+					"path": [
+						"api",
+						"tickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tickets Update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
 					"raw": "{\r\n    \"title\":\"concert\",\r\n    \"price\":10\r\n}"
 				},
 				"url": {
@@ -232,6 +262,65 @@
 						"api",
 						"tickets",
 						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Orders",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ticketId\":\"63be8613878a4100189945df\"\r\n}"
+				},
+				"url": {
+					"raw": "https://ticketing.road/api/orders",
+					"protocol": "https",
+					"host": [
+						"ticketing",
+						"road"
+					],
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Payments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\":\"63bfde9c1fa1fb001941da50\",\r\n    \"token\":\"pk_test_51HdUfqFATAqw8I36wF3x3hlXmPCJdF7DWguElwXnWEEyRMypBSOP98RdZvax1oCHtOupYBJRaGk6yulI9a35jden00deB3IN7n\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ticketing.road/api/payments",
+					"protocol": "https",
+					"host": [
+						"ticketing",
+						"road"
+					],
+					"path": [
+						"api",
+						"payments"
 					]
 				}
 			},
