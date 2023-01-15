@@ -24,3 +24,4 @@ kubectl get secrets
 docker build -t mostofa62/imagename .
 ```
 
+6. Stripe Test Key Roll Key and Secret both for work perfectly in frontend and backend
