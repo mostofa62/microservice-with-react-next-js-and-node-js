@@ -1,4 +1,4 @@
-# udemy microservice nodejs react nextjs full course
+# Microservice with React, Next, Node js and MongoDB
 
 ### Clone this project 
 ## Installation
